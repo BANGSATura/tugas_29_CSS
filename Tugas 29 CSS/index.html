@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="icon.min.css">
+  <title>Belajar Semantic UI</title>
+  <style media="screen">
+    div.centered {
+      height: 100%;
+    }
+    div.grid div.container div.column {
+      width: 500px;
+    }
+    h2.header {
+      text-align: center;
+    }
+    div.centered div.container{
+      padding-top: 100px;
+    }
+    body {
+      background-color: #bdc3c7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ui grid centered">
+    <div class="container">
+      <div class="column">
+        <h2 class="ui teal header">
+          <img class="ui image" src="niomic.png">
+          <div class="content">
+            Daftar Akun Niomic
+          </div>
+        </h2>
+        <div class="ui segment">
+          <form class="ui form" action="index.html" method="post">
+            <div class="field">
+              <div class="ui left icon input">
+                <input type="text" name="first-name" placeholder="Nama Depan">
+                <i class="users icon"></i>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <input type="text" name="last-name" placeholder="Nama Belakang">
+                <i class="users icon"></i>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <input type="tel" name="phone-number" placeholder="Nomor HP/Telp">
+                <i class="users icon"></i>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <input type="email" name="email-address" placeholder="Alamat Email">
+                <i class="users icon"></i>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <input type="password" name="password" placeholder="Password">
+                <i class="lock icon"></i>
+              </div>
+            </div>
+            <button class="fluid ui teal button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="semantic.min.js"></script>
+</body>
+
+</html>
